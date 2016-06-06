@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://use.typekit.net/sab0zma.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<script type='text/javascript' src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<style type='text/css'>
+
+	html, body {
+		margin: 0;
+		padding: 0;
+		color: black;
+		background-color: whitesmoke;
+	}
+
+	body {
+		font-family: "proxima-nova", Proxima Nova, Helvetica;
+		font-size: 20px;
+		text-align: left;
+		font-weight: 900;
+	}
+	
+	.aside {
+		position: absolute;
+		font-size: 30px;
+		width: 33% !important;
+		left: 50%;
+		margin-left: -17.5%;
+		font-style: italic;
+		background-color: rgba(255,0,0,0.75);
+		padding: 10px;
+		box-sizing: border-box;
+		font-weight: 700;
+	}
+	
+	.black {
+		background-color: black;
+		color: white;
+	}
+	
+	.project-data {
+		display: none;
+	}
+	.circle {
+		stroke: #fff;
+		stroke-width: 1.5px;
+	}
+	.text {
+		font-size: 4px;
+	}
+	.link {
+		stroke: #999;
+		stroke-opacity: .6;
+	}
+
+	h1,h2 {
+		margin: 0;
+		padding: 0;
+		font-weight: 900;
+	}
+	
+	h1 {
+		font-size: 100px;
+		line-height: 102px;
+		margin: auto;
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;
+		font-weight: 900;
+	}
+	
+	h2 {
+		font-size: 40px;
+		line-height: 44px;
+		text-align: center;
+		margin: auto;
+		position: relative;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 40px;
+	}
+	
+	.white {
+		color: white;
+	}
+	
+	.cover {
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.section {
+	}
+</style>
+
+</head>
+
+<body>
+
+<!-- infographics -->
+<section class='section project-visualization'>
+<p class='aside vcenter'>
+"I'm not a programmer at all so what I did was find some interesting programmers and collaborated with them.<br/>
+[...] There's only so much room in your head."
+</p>
+
+<!-- This data is used by the javascript to make the visualization -->
+<div class='project-data'>
+Creative Director : Matt Pyke
+Developers : Mike Tucker and Andreas Muller
+Composer : Simon Pyke
+Viola : Annie Kerr
+Clarinet : Merlin Shepherd
+Vocals : Jenny Kosmowsky
+Technician : Benoit Simon
+Architect : Irene Shamma
+Fabrication : AB3 Workshop / Other Fabrications
+AV Consultant and Supplier : Bluman Associates
+Producer : Keri Elmsly
+Film Makers : Giorgia Polizzi / Sandra Ciampone
+Photographers : James Medcraft / Kate Elliot
+
+Creative Director : Matt Pyke
+Composer : Simon Pyke
+Directed and animated by : Alex Peverett / Carl Burgess / Fernando Sarmiento / Jelle Feringa / Karsten Schmidt / Marc Kremers / Mate Steinforth / Matt Pyke / Maxim Zhestkov / Minivegas / Pandapanther / Paul Seen / Paul Simpson / Robert Hodgin / Robert Seidel / Thomas Traum / Tom Scholefield / Tomas Garcia
+
+Creative Director : Matt Pyke
+Sound Design : Simon Pyke
+Animator : Maxim Zhestkov
+
+Creative Director: Matt Pyke
+Animator: Chris Perry
+Producer: Greg Povey
+ 
+Creative Director : Matt Pyke
+Animation : Chris Perry
+Sound : Simon Pyke
+
+Creative Director: Matt Pyke
+Animation: Chris Perry
+
+Creative Director : Matt Pyke
+Animator : Chris Perry
+Choreographer : Benjamin Millepied / LA Dance Project
+Dancers : Julia Eichten and Nathan Makolandra
+Motion Capture : Audiomotion
+Composer : Simon Pyke
+Viola : Annie Kerr
+Clarinet : Merlin Shepherd
+Vocals : Jenny Kosmowsky
+Technician : Benoit Simon
+Architect : Irene Shamma
+Fabrication : AB3 Workshop / Other Fabrications
+AV Consultant and Supplier : Bluman Associates
+Producer : Keri Elmsly
+Film Makers : Giorgia Polizzi / Sandra Ciampone
+Photographers : James Medcraft / Kate Elliot
+
+Creative Director : Matt Pyke
+Developers : Mike Tucker and Andreas Muller
+Composer : Simon Pyke
+Viola : Annie Kerr
+Clarinet : Merlin Shepherd
+Vocals : Jenny Kosmowsky
+Technician : Benoit Simon
+Architect : Irene Shamma
+Fabrication : AB3 Workshop / Other Fabrications
+AV Consultant and Supplier : Bluman Associates
+Producer : Keri Elmsly
+Film Makers : Giorgia Polizzi / Sandra Ciampone
+Photographers : James Medcraft / Kate Elliot
+
+Concept and Creative Directon : Matt Pyke
+Sound Designer : Simon Pyke
+Design and Code : Field
+Photography : James Medcraft
+
+Creative Director : Matt Pyke
+Sound Designer : Simon Pyke
+CGI : Realise
+
+Creative Director : Matt Pyke
+Sound Designer : Simon Pyke
+Animator : Chris Perry
+
+Creative Director : Matt Pyke
+Sound Designer : Simon Pyke
+Animator : Chris Perry
+
+Creative Director: Matt Pyke
+Design and Code: Mike Tucker
+Producer: Greg Povey
+Sound design: Simon Pyke
+Additional: Chris Perry and Renaud Futterer
+ 
+Executive Creative Director: Joe Sundby
+Art Director : Kyle Everett
+Writers: Andrew McMurchie/Simon Rogers
+Executive producer: Matthew Moss
+Project Director: Tod Visdal
+Producer: Lauren Lindstrom
+
+Creative Director: Matt Pyke
+Animation: Chris Perry
+Sound Design: Simon Pyke / Freefarm
+Character Animation: Yes, Commissioner?
+Producer: Greg Povey
+Video footage: Image Bakery
+
+Creative Director: Matt Pyke
+Animator: Chris Perry
+
+Creative Director : Matt Pyke
+Animator : Maxim Zhestkov
+Sound Design : Simon Pyke
+
+Creative Director: Matt Pyke
+Software Development: Karsten Schmidt
+
+</div>
+</section>
+
+<!-- title -->
+<section class='section'>
+<h1 class='vcenter'>Matt Pyke</h1>
+</section>
+
+<!-- we are all unique -->
+<section class='section'>
+<iframe class='full' src="https://player.vimeo.com/video/53673410?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<!-- start bio -->
+<!-- <section class='section'> -->
+<!-- 	<h1 class='vcenter'>Background</h1> -->
+<!-- </section> -->
+
+<!-- what he looks like -->
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/matt-pyke.jpg'); background-size: 400px auto;" > -->
+<!-- </section> -->
+
+<!-- born uk -->
+<!-- <section class='section'> -->
+<!-- 	<h1 class='vcenter white'> -->
+<!-- 		b. 1975 -->
+<!-- 	</h1> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/union-jack.png');" /> -->
+<!-- </section> -->
+
+<!-- illustration -->
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/drawing-13-yrs-ago.jpg');" /> -->
+<!-- </section> -->
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/technical-drawing-24-yrs-ago.jpg');" /> -->
+<!-- </section> -->
+
+<!-- Designers republic -->
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/designers-republic.png');" /> -->
+<!-- </section> -->
+
+
+<section class='section black'>
+	<div class='vcenter'>
+	<h1 class='vcenters'>Universal<br/>Everything</h1>
+	<h2 class='vcenters'>founded 2004</h2>
+	</div>
+</section>
+
+<!-- dance -->
+<section class='section black'>
+	<h2 class='vcenter'>Presence</h2>
+</section>
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/dance-concept.jpg');" /> -->
+<!-- </section> -->
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/dance-concept-2.jpg');" /> -->
+<!-- </section> -->
+<section class='section'>
+<iframe class='full' src="https://player.vimeo.com/video/76047694?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<!-- communion -->
+<section class='section black'>
+	<h2 class='vcenter'>Communion</h2>
+</section>
+
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/communion-concept.jpg');" /> -->
+<!-- </section> -->
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/communion-concept-2.jpg');" /> -->
+<!-- </section> -->
+
+<section class='section'>
+	<iframe class='full' src="https://player.vimeo.com/video/24868343?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<!-- hyundai -->
+<section class='section black'>
+	<h2 class='vcenter'>Hyundai x Running man</h2>
+</section>
+
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/running-man-concept.jpg');" /> -->
+<!-- </section> -->
+
+<section class='section'>
+<iframe class='full' src="https://player.vimeo.com/video/145976293?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<!-- collab -->
+<section class='section'>
+	<h2 class='vcenter'>Collaboration</h2>
+</section>
+
+
+
+
+<!-- <section class='section'> -->
+<!-- 	<img class='full cover' style="background-image: url('assets/office.jpg');" /> -->
+<!-- </section> -->
+
+<!-- meadow -->
+<section class='section'>
+<iframe class='full' src="https://player.vimeo.com/video/5405849?color=ffffff&title=0&byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<!-- <section class='section'> -->
+<!-- <h1 class='vcenter'>:)</h1> -->
+<!-- </section> -->
+
+</body>
+</html>
